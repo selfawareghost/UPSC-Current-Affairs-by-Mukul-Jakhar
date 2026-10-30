@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Current Line — UPSC 2027 current affairs by Mukul Jakhar</title>
-<meta name="description" content="Month-by-month current affairs notes for UPSC CSE 2027 — PIB Prism, MEA outcomes, Down To Earth and major current affairs — mapped like a metro line. By Mukul Jakhar.">
-<meta name="author" content="Mukul Jakhar">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314213D'/%3E%3Cg fill='none' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M10 20h22l12 12h10' stroke='%237B3FBF'/%3E%3Cpath d='M10 30h18l12 12h14' stroke='%231F6FD1'/%3E%3Cpath d='M10 40h14l12 12h18' stroke='%2313955A'/%3E%3C/g%3E%3C/svg%3E">
+<title>Current Line — UPSC 2027 current affairs by Ghost</title>
+<meta name="description" content="Month-by-month current affairs notes for UPSC CSE 2027 — PIB Prism, MEA outcomes, Down To Earth and major current affairs — mapped like a metro line. By Ghost.">
+<meta name="author" content="Ghost">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cstyle%3E.s%7Bfill:#F2B705%7D.t%7Bfill:#fff%3Bstroke:#14213D%7D.g%7Bstroke:#14213D%7D%40media (prefers-color-scheme:dark)%7B.s%7Bfill:#F7C94B%7D.t%7Bfill:#141E33%3Bstroke:#EAF0FA%7D.g%7Bstroke:#EAF0FA%7D%7D%3C/style%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='#13955A'/%3E%3Cstop offset='.55' stop-color='#1F6FD1'/%3E%3Cstop offset='1' stop-color='#7B3FBF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect class='s' x='7' y='7' width='55' height='55' rx='15'/%3E%3Crect class='t' x='2.5' y='2.5' width='55' height='55' rx='15' stroke-width='2.5'/%3E%3Cpath class='g' d='M19 45V29a12 12 0 0 1 24 0v16l-4-4-4 4-4-4-4 4-4-4z' fill='url(#g)' stroke-width='3.6' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Mukta:wght@500;700&display=swap" rel="stylesheet">
@@ -51,6 +51,17 @@ header.nav{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--b
 header.nav .wrap{display:flex;align-items:center;gap:12px;height:64px}
 .logo{display:flex;align-items:center;gap:11px;text-decoration:none}
 .logo b{font-family:var(--display);font-weight:800;font-size:21px;letter-spacing:-.02em}
+.ghost{flex:none;overflow:visible}
+.visits{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 14px;margin-left:4px;border-radius:999px;background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--rule);font-weight:700;font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.visits svg{color:var(--mea)}
+.visits.loading #vnum{opacity:.5}
+.visits.down{color:var(--muted)}
+.visits.bump svg{animation:blink .5s ease}
+@keyframes blink{0%,100%{transform:scaleY(1)}45%{transform:scaleY(.15)}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:760px){.visits{padding:0 10px;font-size:14px;gap:5px;margin-left:0}}
+.logo b{white-space:nowrap}
+@media (max-width:420px){.logo b{font-size:18px}.logo{gap:8px}.logo .ghost{width:34px;height:34px}.navr{gap:0}.nb{padding:0 8px}.visits{padding:0 9px;gap:4px;font-size:13px}header.nav .wrap{gap:6px}}
 .navr{margin-left:auto;display:flex;gap:6px;align-items:center}
 .nb{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;font-weight:700;font-size:15px;color:var(--ink-2);text-decoration:none}
 .nb:hover{background:var(--sunk)}
@@ -70,7 +81,7 @@ header.nav .wrap{display:flex;align-items:center;gap:12px;height:64px}
 .word .stripes i{display:block;height:.075em;width:1.05em;border-radius:99px}
 .intro p{margin:0 0 14px;font-size:19px;color:var(--ink-2);max-width:42ch}
 .by{display:flex;align-items:center;gap:12px;margin:18px 0 18px}
-.by .mj{width:44px;height:44px;border-radius:12px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:-.02em}
+.by .ghost{width:48px;height:48px}
 .by small{display:block;color:var(--muted);font-size:14px;line-height:1.2}
 .by b{font-size:18px;font-family:var(--display)}
 .acts{display:flex;flex-wrap:wrap;gap:10px}
@@ -349,20 +360,21 @@ mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 2px}
 <div id="bar"></div>
 <header class="nav"><div class="wrap">
   <a class="logo" href="#/" aria-label="Current Line home">
-    <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="var(--ink)"/><g fill="none" stroke-width="6" stroke-linecap="round"><path d="M10 16h20l12 12h12" stroke="var(--pib)"/><path d="M10 26h16l12 12h16" stroke="var(--mea)"/><path d="M10 36h12l12 12h20" stroke="var(--dte)"/><path d="M10 46h8l6 6" stroke="var(--ca)"/></g></svg>
+    <svg class="ghost" width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="gl-nav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--dte)"/><stop offset=".55" style="stop-color:var(--mea)"/><stop offset="1" style="stop-color:var(--pib)"/></linearGradient></defs><rect x="7" y="7" width="55" height="55" rx="15" fill="var(--sp)"/><rect x="2.5" y="2.5" width="55" height="55" rx="15" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.5"/><path d="M19 45V29a12 12 0 0 1 24 0v16l-4-4-4 4-4-4-4 4-4-4z" fill="url(#gl-nav)" stroke="var(--ink)" stroke-width="3.6" stroke-linejoin="round"/></svg>
     <b>Current Line</b>
   </a>
   <nav class="navr">
     <a class="nb hide-s" href="#/" data-go="map"><span class="t">Map</span></a>
     <button class="nb" id="searchBtn" title="Search all notes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="t">Search</span><kbd>/</kbd></button>
     <button class="nb" id="themeBtn" aria-label="Switch light or dark" title="Switch light or dark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <span class="visits loading" id="visits" title="Counting visits…" aria-live="polite"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span id="vnum">···</span><span class="sr">visits</span></span>
   </nav>
 </div></header>
 
 <main id="app"></main>
 
 <footer><div class="wrap">
-  <div><b>Current Line</b>, current affairs for UPSC CSE 2027, compiled by <b>Mukul Jakhar</b>.</div>
+  <div><b>Current Line</b>, current affairs for UPSC CSE 2027, compiled by <b>Ghost</b>.</div>
   <div id="ftCount"></div>
 </div></footer>
 
@@ -23902,7 +23914,7 @@ function viewHome(){
       <h1 class="word"><span>Current</span><span class="l2">Line<span class="stripes" aria-hidden="true"><i style="background:var(--pib)"></i><i style="background:var(--mea)"></i><i style="background:var(--dte)"></i><i style="background:var(--ca)"></i></span></span></h1>
       <div class="intro">
         <p>Twelve stations from April 2026 to March 2027. Four lines run through them, and they all end at Prelims 2027.</p>
-        <div class="by"><span class="mj">MJ</span><span><small>Current affairs notes by</small><b>Mukul Jakhar</b></span></div>
+        <div class="by"><svg class="ghost" width="48" height="48" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="gl-by" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--dte)"/><stop offset=".55" style="stop-color:var(--mea)"/><stop offset="1" style="stop-color:var(--pib)"/></linearGradient></defs><rect x="7" y="7" width="55" height="55" rx="15" fill="var(--sp)"/><rect x="2.5" y="2.5" width="55" height="55" rx="15" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.5"/><path d="M19 45V29a12 12 0 0 1 24 0v16l-4-4-4 4-4-4-4 4-4-4z" fill="url(#gl-by)" stroke="var(--ink)" stroke-width="3.6" stroke-linejoin="round"/></svg><span><small>Current affairs notes by</small><b>Ghost</b></span></div>
         <div class="acts">${last?`<a class="btn go" href="${href(last)}">Continue ${esc(last.special?last.title:monthOf(last).short+' '+HEADS[last.head].name)}</a>`:(cur?`<a class="btn go" href="#/m/${cur.key}">Open ${cur.name}</a>`:'')}<a class="btn" href="#/m/2026-04">Start from April</a></div>
       </div>
     </section>
@@ -24086,6 +24098,21 @@ function onScroll(){const d=document.documentElement,mx=d.scrollHeight-innerHeig
 addEventListener('scroll',onScroll,{passive:true});
 $('#ftCount').textContent=`${NOTES.length} notes, ${INDEX.length.toLocaleString('en-IN')} searchable points`;
 route();
+
+/* ---------- visit counter ----------
+   One hit per page load on a shared counter, so every open from any device
+   (and every refresh) adds 1 to the same total. */
+(function(){
+  const box=$('#visits'), num=$('#vnum');
+  const show=n=>{const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, from=Math.max(0,n-24), t0=performance.now();
+    const step=t=>{const k=Math.min(1,(t-t0)/700), v=reduce?n:Math.round(from+(n-from)*(1-Math.pow(1-k,3)));num.textContent=v.toLocaleString('en-IN');if(k<1&&!reduce)requestAnimationFrame(step);else{box.classList.add('bump')}};
+    requestAnimationFrame(step)};
+  fetch('https://abacus.jasoncameron.dev/hit/selfawareghost/current-line',{cache:'no-store'})
+    .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+    .then(d=>{const n=Number(d.value);if(!Number.isFinite(n))throw new Error('no value');
+      box.classList.remove('loading');box.title=`${n.toLocaleString('en-IN')} visits so far, counted across every device`;show(n)})
+    .catch(()=>{box.classList.remove('loading');box.classList.add('down');num.textContent='—';box.title='The visit counter could not be reached just now'});
+})();
 </script>
 </body>
 </html>
